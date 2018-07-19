@@ -44,8 +44,50 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception)
+    // public function render($request, Exception $exception)
+    // {
+    //     return parent::render($request, $exception);
+    // }
+    public function render($request, Exception $e)
     {
-        return parent::render($request, $exception);
+        if ($e instanceof ModelNotFoundException) 
+        {
+            $e = new NotFoundHttpException($e->getMessage(), $e);
+        }
+
+        //insert this snippet
+        if ($this->isHttpException($e)) 
+        {
+            $statusCode = $e->getStatusCode();
+            switch ($statusCode) 
+            {
+                case '404': return response()->view('errors.404', array(), 404);
+                case '503': return response()->view('errors.404', array(), 503);
+            }
+        }
+
+        return parent::render($request, $e);
     }
+    
+    /**
+     * Create a Symfony response for the given exception.
+     *
+     * @param  \Exception  $e
+     * @return mixed
+     */
+    // protected function convertExceptionToResponse(Exception $e)
+    // {
+    //     if (config('app.debug')) {
+    //         $whoops = new \Whoops\Run;
+    //         $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+
+    //         return response()->make(
+    //             $whoops->handleException($e),
+    //             method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500,
+    //             method_exists($e, 'getHeaders') ? $e->getHeaders() : []
+    //         );
+    //     }
+
+    //     return parent::convertExceptionToResponse($e);
+    // }
 }

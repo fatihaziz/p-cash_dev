@@ -1,0 +1,25 @@
+[{
+        "quest": "How many Broker have you collaborate with?",
+        "answer": "Currently, we collaborate with 10 brokers"
+    },
+    {
+        "quest": "How to link my account to the trading platform?",
+        "answer": "First, you need to make Portofolio account, then register your account trading on your profile setting"
+    },
+    {
+        "quest": "Can I open my account in other currency other than USD?",
+        "answer": "Depends on the broker you use"
+    },
+    {
+        "quest": "What is a “lot” in trading terms?",
+        "answer": "A Forex lot is a trading term used to describe the size of a trading position in Forex with reference to a standard of 100,000 units of the base currency."
+    },
+    {
+        "quest": "How to link my account to the trading platform?",
+        "answer": "First, you need to make Portofolio account, then register your account trading on your profile setting"
+    },
+    {
+        "quest": "How to link my account to the trading platform?",
+        "answer": "First, you need to make Portofolio account, then register your account trading on your profile setting"
+    }
+]

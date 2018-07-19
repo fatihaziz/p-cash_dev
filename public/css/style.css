@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gotham";
+    background-image: url('bg.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    position: relative;
+    color: #fafafa;
+}
+
+#hompage {}
+
+.entry-wrapper {
+    padding-top: 4em;
+}
+
+#banner {
+    display: none;
+}
+
+#broker-list {
+    padding: 2em;
+    background: #fafafa;
+    color: #21547d;
+}
+
+#broker-list>h2,
+#broker-list>p {
+    text-align: center;
+}
+
+#broker-list>p {
+    margin: auto;
+    margin-top: 1em;
+    max-width: 50%;
+}
+
+.table-comparison {
+    margin: auto;
+    margin-top: 3em;
+    width: max-content;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.table-comparison .row {
+    display: table-row;
+    font-weight: 600;
+    transition: all ease-in-out 0.2s;
+    border-bottom: 1px solid #333;
+}
+
+.table-comparison .row:nth-child(2n+1) {
+    background-color: #4469880f;
+}
+
+.table-comparison .row .svg-inline--fa {
+    opacity: 0.7;
+}
+
+.table-comparison .row .col {
+    width: max-content;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    padding: 2em 1em;
+}
+
+.table-comparison .row .col * {
+    max-width: 100px;
+}
+
+.table-comparison .row:hover {
+    background-color: #338ab1;
+    font-weight: 600;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.table-comparison .row:nth-child(1),
+.table-comparison .row:nth-child(1):hover {
+    font-weight: 900;
+    color: #21547d;
+    background-color: #fefefe;
+    cursor: initial;
+}
+
+.col.black {
+    background-color: #21547d;
+}
+
+#banner #banner-text {}
+
+footer {
+    padding: 2em;
+}
+
+.footer-menus ul {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin: auto;
+    list-style-type: none;
+}
+
+.footer-menus ul li:nth-child(2) {
+    border: 1.5px solid #fafafa;
+    border-top: none;
+    border-bottom: none;
+    margin: 0em 1em;
+    padding: 0 1em;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.tmb.black {
+    background: #21547d;
+}
