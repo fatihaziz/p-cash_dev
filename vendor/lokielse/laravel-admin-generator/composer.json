@@ -1,0 +1,47 @@
+{
+  "name": "lokielse/laravel-admin-generator",
+  "description": "An Admin Panel Generator for Laravel 5",
+  "keywords": [
+    "lokielse",
+    "laravel",
+    "admin",
+    "panel",
+    "laravel-admin",
+    "laravel-admin-generator",
+    "laravel-console",
+    "generator"
+  ],
+  "homepage": "https://github.com/lokielse/laravel-admin-generator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lokielse",
+      "email": "lokielse@gmail.com",
+      "homepage": "http://lokielse.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "illuminate/support": "~5.1",
+    "php": ">=5.3.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Lokielse\\AdminGenerator\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Lokielse\\AdminGenerator\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+    }
+  }
+}
